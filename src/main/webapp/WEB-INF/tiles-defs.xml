@@ -1,0 +1,67 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+       "http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+<tiles-definitions>
+	<definition
+		name="templateDefinition"
+		path="/layout/layout.jsp">
+		<put
+			name="pageTitle"
+			value="This is the page title"
+			type="string" />
+		<put
+			name="header-left"
+			value="This is the left header"
+			type="string" />
+		<put
+			name="header"
+			value="/layout/header.jsp"
+			type="page" />
+		<put
+			name="header-right"
+			value="/layout/top-right.jsp"
+			type="page" />
+		<put
+			name="title"
+			value="This is the title"
+			type="string" />
+		<put
+			name="left"
+			value="This is the left"
+			type="string" />
+		<put
+			name="body"
+			value="This is the body"
+			type="string" />
+		<put
+			name="right"
+			value="This is the right"
+			type="string" />
+		<putList name="css">
+		</putList>
+		<putList name="javascript">
+		</putList>
+		<putList name="footer">
+		</putList>
+	</definition>
+	<definition
+		name="newTemplateDefinition"
+		extends="templateDefinition">
+		<put
+			name="banner"
+			type="page"
+			value="/layout/banner.jsp" />
+		<put
+			name="header"
+			type="page"
+			value="/layout/header-new.jsp" />
+		<putList name="css">
+			<add
+				type="page"
+				value="/layout/css.jsp" />
+		</putList>
+		<putList name="footer">
+			<add type="page" value="/layout/bottom.jsp" />
+		</putList>
+	</definition>
+</tiles-definitions>

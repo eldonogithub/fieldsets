@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Example Sending HTML from crontab</title>
+<style type="text/css">
+th {
+	background-color: aqua;
+}
+tr {
+	background-color: lime;
+}
+</style>
+<body>
+<h1>CRONTAB Environment </h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <!-- data row -->
+        <tr>
+            <td>MAILTO</td>
+            <td>$MAILTO</td>
+        </tr>
+        <!-- data row -->
+        <tr>
+            <td>TESTHOME</td>
+            <td>$TESTHOME</td>
+        </tr>
+        <!-- data row -->
+        <tr>
+            <td>CONTENT_TYPE</td>
+            <td>$CONTENT_TYPE</td>
+        </tr>
+</table>
+</body>
+</html>
