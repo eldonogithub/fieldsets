@@ -225,6 +225,12 @@
     </repositories>
 
 
-
+    <distributionManagement>
+        <repository>
+            <name>local repo</name>
+            <id>local</id>
+            <url>file://${basedir}/repo</url>
+        </repository>
+    </distributionManagement>
 
 </project>
